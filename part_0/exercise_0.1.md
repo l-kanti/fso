@@ -14,7 +14,6 @@ sequenceDiagram
     activate Server
     Client->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json (AJAX request)
     deactivate Server
-    User pushes button that executes logic to post a new_note, json contains note creation date and note text
     Client->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note (done by AJAX)
     activate Server
     Server-->>Client: POSTs, sends response code of 200
