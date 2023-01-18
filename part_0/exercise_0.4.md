@@ -6,7 +6,7 @@ sequenceDiagram
     Server-->>Client: POSTs, sends response code of 302 redirect, reloading page
     deactivate Server
     Client-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes.html
-    activate server
+    activate Server
     Server-->>Client: sends file with response code of 200
     deactivate Server
     Client-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
@@ -14,4 +14,4 @@ sequenceDiagram
     Client-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate Server
     Server-->>Client: Sends all files with response code of 200
-    deactivate server
+    deactivate Server
